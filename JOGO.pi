@@ -1,0 +1,18 @@
+#Python Game floresta encantada
+print("Bem-vindo/a a minha aventura!")
+print("\nAcordaste numa floresta encantada após um acidente do qual não te recordas.")
+print("")
+lado = input("\nVais para a direita ou esquerda?(direita ou esquerda) ")
+if lado == "direita":
+  print("\nSegues o caminho da direita onde encontras uma casa estranha em entras.")
+  pegar=input("Encontras uma mesa onde nela tem uma mochila.(pegar ou nao pegar) ")
+  if pegar == "pegar":
+    print("Pegas na mochila e continuas o teu caminho, até que encontras escondido no meio de desconbros um bau, ao abrir o bau econtras uma faca, um machado e um enorme martelo.")
+    arma = input("Oque desejas pegar?(faca,machado,martelo) ")
+    if arma == "faca": 
+      print("Atacas o mosntro porem não é o suficiente para o derrotar e morres.")
+      print(f"{'Bem-vindo ao Python!' : <50}")
+elif lado == "esquerda":
+  print("Segues o caminho da esquerda ")
+else:
+  print("Erro")
