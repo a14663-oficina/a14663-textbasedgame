@@ -5,13 +5,13 @@ print("Para cada fim de narração teras de fazer uma escolha entre duas opçõe
 print(f"{'Bem-vindo a minha aventura!' : >50}")
 print("\nAcordaste numa floresta encantada após um acidente do qual não te recordas.")
 print("\nA tua frente vez dois caminhos no meio da floresta.")
-lado = input("\nVais para a direita ou esquerda?(direita ou esquerda) ")
+lado = input("\nVais para a direita ou esquerda?(direita ou esquerda) ").lower()
 if lado == "direita":
   print("\nSegues o caminho da direita onde encontras uma casa estranha, e entras na casa.")
-  pegar=input("\nEntras na casa e encontras uma mesa ao entrar onde tem uma mochila.(pegar ou nao pegar) ")
+  pegar=input("\nEntras na casa e encontras uma mesa ao entrar onde tem uma mochila.(pegar ou nao pegar) ").lower() 
   if pegar == "pegar":
     print("\nPegas na mochila e continuas o teu caminho, até que encontras escondido, no meio de desconbros, um bau, ao abrir o bau encontras uma faca, um machado e um enorme martelo.")
-    arma = input("Qual arma desejas?(faca,machado,martelo) ")
+    arma = input("Qual arma desejas?(faca,machado,martelo) ").lower()
     if arma == "faca": 
       print("Pegas na arma e continuas o teu caminho, até que te deparas com uma porta, ao entrar nela encontras uma criatura.")
       print("Atacas o mosntro porem não é o suficiente para o derrotar e morres.")
@@ -23,7 +23,7 @@ if lado == "direita":
     else:
       print("Pegas na arma e continuas o teu caminho, até que te deparas com uma porta, ao entrar nela encontras uma criatura.")
       print("\nConvocas o teu enorme martelo e atacas o monstro, o martelo é muito forte e derrota o mosntro com facilidade.")
-      porta = input("Continuas a tua jornada, mais a frente na casa encontras uma porta a brilhar.(entrar ou nao entrar) ")
+      porta = input("Continuas a tua jornada, mais a frente na casa encontras uma porta a brilhar.(entrar ou nao entrar) ").lower()
       if porta == "entrar":
         print("Entras na porta e derepente voltas ao momento antes do acidente, e consegues empedir que ele aconteça.")
         my_function()
@@ -32,7 +32,7 @@ if lado == "direita":
         my_function()
   else:
     print("\nDeixas a mochila de lado e continuas o teu caminho, até que encontras escondido, no meio de desconbros, um bau, ao abrir o bau encontras uma faca, um machado e um enorme martelo.")
-    arma = input("\nQual arma desejas?(faca,machado,martelo) ")
+    arma = input("\nQual arma desejas?(faca,machado,martelo) ").lower()
     if arma == "faca": 
       print("Pegas na arma e continuas o teu caminho, até que te deparas com uma porta, ao entrar nela encontras uma criatura.")
       print("Atacas o mosntro porem não é o suficiente para o derrotar e morres.")
@@ -44,7 +44,7 @@ if lado == "direita":
       my_function()
     elif arma == "martelo":
       print("Não consegues portar o martelo sem a mochila.")
-      arma = input("\nQual arma desejas?(faca,machado) ")
+      arma = input("\nQual arma desejas?(faca,machado) ").lower()
       if arma == "faca": 
         print("Pegas na arma e continuas o teu caminho, até que te deparas com uma porta, ao entrar nela encontras uma criatura.")
         print("Atacas o mosntro porem não é o suficiente para o derrotar e morres.")
@@ -57,15 +57,15 @@ if lado == "direita":
 
 elif lado == "esquerda":
   print("Segues o caminho da esquerda, até que encontras uma quinta.")
-  quinta = input("\nVês uma casa e um grande campo de milho.(casa,campo) ")
+  quinta = input("\nVês uma casa e um grande campo de milho.(casa,campo) ").lower()
   if quinta == "casa":
-    senhor = input("\nVais até a casa e notas a porta aberta, ao entrar nela vês um senhor, porem ele ainda não te notou.(falar, nao falar) ")
+    senhor = input("\nVais até a casa e notas a porta aberta, ao entrar nela vês um senhor, porem ele ainda não te notou.(falar, nao falar) ").lower()
     if senhor == "falar":
       print("\nEle ataca-te, e causa-te um ferimento, mas consegues evitar que ele te mate, reparas num pedaço de vidro no chão e consegues usar-lo para matar o senhor.")
       print("Continuas a explorar a casa em busca de um kit de primieros socorros ou algo que te possa ajudar a estacar o sangramento do ferimento causado pelo senhor.")
       print("Chegas no que julgas ser a cave da casa e decides entrar")
       print("Ao entrar ves um monte de prateleiras cheias de ferramentas do senhor, e um tapete, ao passar por cima dele tu ouves um som estranho.")
-      mulher = input("Tu decides ver oque tem lá, ao remover o tapete encontras uma escotilha, e entras por ela depois de descer umas escadas bem longas encontras uma mulher amarrada a uma cadeira presa pelo senhor.(falar ou nao falar) ")
+      mulher = input("Tu decides ver oque tem lá, ao remover o tapete encontras uma escotilha, e entras por ela depois de descer umas escadas bem longas encontras uma mulher amarrada a uma cadeira presa pelo senhor.(falar ou nao falar) ").lower()
       if mulher == "falar":
         print("\nFalas com a mulher e descobres que o senhor era uma criatura disfarçada, e decides soltar e salvar a mulher.")
         print("Salvas a mulher e com a ajuda dela tratas das tuas feridas e vocês conseguem sair da casa e continuar vivos juntos.")
@@ -78,7 +78,7 @@ elif lado == "esquerda":
       print("\nPassas pelo corredor sem ele te notar.")
       print("Continuas a explorar a casa e chegas no que julgas ser a cave da casa e decides entrar")
       print("Ao entrar ves um monte de prateleiras cheias de ferramentas do senhor, e um tapete, ao passar por cima dele tu ouves um som estranho.")
-      mulher2 = input("Tu decides ver oque tem lá, ao remover o tapete encontras uma escotilha, e entras por ela depois de descer umas escadas bem longas encontras uma mulher amarrada a uma cadeira presa pelo senhor.(falar ou nao falar) ")
+      mulher2 = input("Tu decides ver oque tem lá, ao remover o tapete encontras uma escotilha, e entras por ela depois de descer umas escadas bem longas encontras uma mulher amarrada a uma cadeira presa pelo senhor.(falar ou nao falar) ").lower()
       if mulher2 == "falar":
         print("\nFalas com a mulher e descobres que o senhor era uma criatura disfarçada, e decides soltar e salvar a mulher.")
         print("Sobes junto com a mulher e o senhor ouviu vos a fechar a escotilha e foi verificar...")
@@ -92,7 +92,7 @@ elif lado == "esquerda":
         my_function()
   else:
     print("\nVais em direção ao campo ver oque é aquela luz tão brilhante.")
-    criaturacampo = input("Ao entrar no campo e passar pelo meio do milho deparaste com uma criatura estranha, ela ainda não te percebeu, tu vês uma arma no chão atrás dela, ou foges por outro lado ou pegas na arma e tentas finalizar a criatura.(fugir ou pegar arma) ")
+    criaturacampo = input("Ao entrar no campo e passar pelo meio do milho deparaste com uma criatura estranha, ela ainda não te percebeu, tu vês uma arma no chão atrás dela, ou foges por outro lado ou pegas na arma e tentas finalizar a criatura.(fugir ou pegar arma) ").lower()
     if criaturacampo == "fugir":
       print("\nTu passas pelo meio do milho a desviar-te da criatura.")
       print("Encontras finalmente a origem da luz, é uma pedra bem brilante a flutuar.")
@@ -101,7 +101,7 @@ elif lado == "esquerda":
     else:
       print("\nCorres e pegas na arma, atacas a criatura e consegues derruta-la antes que ela te consiga atacar.")
       print("Continuas a andar no meio do milho e encontras finalmente a origem da luz, é uma pedra bem brilante a flutuar.")
-      pedra = input("Pegar na pedra?(pegar ou nao pegar) ")
+      pedra = input("Pegar na pedra?(pegar ou nao pegar) ").lower()
       if pedra == "pegar":
         print("\nPegas na pedra e aop tocar nela tu voltas ao teu mundo normal, num hospital e descobres que sofreste um acidente de carro do qual te apagou por dias, passado um tempo sais do hospital e voltas a tua vida normal.")
         my_function()
