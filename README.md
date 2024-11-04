@@ -18,4 +18,4 @@ fim da narrativa aparecem entre barras (…) as escolhas para o jogar usar.
 Um dos desafios que encontrei a fazer o jogo foi que não tinha muita imaginação para fazer a
 história depois quando fui fazer a segunda metade do trabalho.
 No futuro pretendo colocar ainda mais escolhas e caminhos e usar mias códigos para tentar
-simplificar o jogo e otimizar-lo</p>
+simplificar o jogo e otimizar-lo.</p>
